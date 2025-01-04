@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reit Place RC & Retro Games</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- LEFT SIDEBAR -->
+
+    <div class="sidebar-left">
+    <img 
+      src="ailogo.gif" 
+      alt="Left Sidebar Logo" 
+      class="sidebar-logo"
+      style="width: 50%; height: auto;display: block; margin: 0 auto;"
+    />
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="sidebar-right">
+    <img 
+      src="ailogo.gif" 
+      alt="Right Sidebar Logo" 
+      class="sidebar-logo"
+      style="width: 50%; height: autodisplay: block; margin: 0 auto;"
+   />
+    <h2>Shop Our Merch</h2>
+    <p>Support our channel with exclusive items!</p>
+    <!-- Merch store embed -->
+    <iframe
+      src="https://my-store-11515587.creator-spring.com/"
+      class="merch-iframe"
+      loading="lazy"
+      title="Merchandise Store (Right)">
+    </iframe>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+
+
+    <!-- Banner & Channel Title -->
+        <img src="REIT Place Logo2.gif" alt="Reit Place RC & Retro Games Banner2" 
+      style="width:500%; height:auto; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.2);" 
+    />
+    
+        <!-- Top nav links -->
+    <div class="header-links">
+      <a href="http://reitplacerc.com" target="_blank">Main Website</a>
+      <a href="https://www.youtube.com/@reitplace4765" target="_blank">YouTube</a>
+      <a href="https://rumble.com/c/REITPlace" target="_blank">Rumble</a>
+      <a href="https://www.instagram.com/reitplace/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/REITPlace/" target="_blank">Facebook</a>
+      <a href="https://www.ebay.com/usr/reitplacerc" target="_blank">eBay</a>
+    </div>
+
+    <h1>Reit Place RC & Retro Games</h1>
+    <p>Explore the best of RC cars and retro gaming!</p>
+    <img src="ai4.jpg" alt="Reit Place RC & Retro Games Banner" style="width:300%; height:auto; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.2);"/>
+    
+  </header>
+
+  <!-- MAIN CONTENT (shifted to accommodate both sidebars) -->
+  <div class="container">
+
+
+    <!-- Most Recent Upload -->
+    <div class="latest-video">
+      <h2>Most Recent Upload</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.tubebuddy.com/quicknav/latestembed/UCnGIzLzRd1u_CdYXfw_8lJg"
+          frameborder="0"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="video-title">Latest Must See!!</div>
+    </div>
+
+    <!-- SUPPORT OUR CHANNEL SECTION -->
+    <section class="support-section">
+      <h2>Support Our Channel</h2>
+      <p>
+        We offer all-natural Hemp Tiger Balm for topical use on dry or irritated skin.
+        Our product is made with beeswax, coconut butter, CBD organics,
+        and naturally infused ingredients. Each balm is handmade for your skin's health and comfort.
+      </p>
+
+      <div class="gallery">
+        <div><img src="image1.jpg" alt="Hemp Tiger Balm" /></div>
+        <div><img src="image2.jpg" alt="Beeswax Balm" /></div>
+        <div><img src="image3.jpg" alt="Coconut Butter Balm" /></div>
+        <div><img src="image4.jpg" alt="CBD Organic Balm" /></div>
+      </div>
+
+      <div class="pay-section">
+        <form
+          action="https://www.paypal.com/ncp/payment/ULP3XBN6MU88W"
+          method="post"
+          target="_top"
+          class="paypal-form"
+        >
+          <input class="pp-ULP3XBN6MU88W" type="submit" value="Buy Now" />
+          <img
+            src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg"
+            alt="cards"
+          />
+          <section>
+            Powered by
+            <img
+              src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg"
+              alt="paypal"
+              class="paypal-logo"
+            />
+          </section>
+        </form>
+      </div>
+    </section>
+    <!-- END SUPPORT SECTION -->
+
+    <!-- MAIN PLAYLISTS SECTION -->
+    <h2>Playlists</h2>
+    <div class="playlists">
+      <!-- 3 iframes as example -->
+      <div class="playlist">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/?listType=playlist&list=PLkT3vHr5zD6h_KJaHDJwt49g1RrDSJdT8"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="playlist-title">Pick-Up's - Garage Sale Grabs - Flea Market</div>
+      </div>
+
+      <div class="playlist">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/?listType=playlist&list=PLkT3vHr5zD6hJDz4HHiCdD3ykvrtpHoC9"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="playlist-title">CNHL Batteries</div>
+      </div>
+
+      <div class="playlist">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/?listType=playlist&list=PLkT3vHr5zD6gJ9kZEsWMcLNlvNzQpV3F2"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="playlist-title">Winter Evening Bearings</div>
+      </div>
+    </div>
+
+    <!-- More playlists as text links -->
+    <h3>More Playlists</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6hgw8ej2XCCyZcXG_UxI7L1" target="_blank">URGENEX Battery Running and Reviews</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6gi5qo-FArR-3aWP_TRPPnP" target="_blank">HAIBOXING</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6gDFVIjJtHNV7FyTaKtqZ7D" target="_blank">Track Time</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6gy3-zQm_YK78tULAiG3ShU" target="_blank">LC Racing</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6ifWtln_YXhbgCOzL87GnCa" target="_blank">RC Stuff</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6hxlq-Urj1GArna0Up4QhsI" target="_blank">Bench Talk 'Week End Repairs'</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6jWq6WdXQo1VDP8doYsacqj" target="_blank">TAMIYA Kits Builds and Run Video's</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6isnWcQ8OMYxErsNeR1oFey" target="_blank">WLToys</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6gxVWhtrSV0ey2mpc1Ldifo" target="_blank">RLAARLO</a></li>
+    </ul>
+
+    <!-- MOST VIEWED -->
+    <div class="latest-video">
+      <h2>Most Viewed</h2>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/NwqhqrmPAUU?si=9LlIj52FuqCYQN64"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="video-title">Must See!!</div>
+    </div>
+
+    <!-- RETRO GAME PLAYLISTS -->
+    <h2>Retro Game Playlists</h2>
+    <div class="playlists">
+      <div class="playlist">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/?listType=playlist&list=PLkT3vHr5zD6h_KJaHDJwt49g1RrDSJdT8"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="playlist-title">Pick-Up's - Garage Sale Grabs - Flea Market</div>
+      </div>
+      <div class="playlist">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/?listType=playlist&list=PLkT3vHr5zD6hNScYhuO9aWYLyOSaBCPs6"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="playlist-title">Retro Rehome - Pick ups and visits</div>
+      </div>
+      <div class="playlist">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/?listType=playlist&list=PLkT3vHr5zD6i2WKZp5cJtRIZGI06BHmdO"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="playlist-title">PlayStation Lets Play and Stuff</div>
+      </div>
+    </div>
+    
+
+    <h3>More Retro Playlists</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6jMRtHnsrBAdpF_CIt6Z6bo" target="_blank">SNES - Lets Play - Random Super Nintendo</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLkT3vHr5zD6
