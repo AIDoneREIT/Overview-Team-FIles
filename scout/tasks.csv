@@ -1,0 +1,4 @@
+Task ID,Description,Assignee,Priority,Status,Time Spent,Due Date,Dependencies,Last Updated,Notes
+OUT-003,Follow up with Leopard Hobby,Scout,High,In Progress,2 hours,2025-01-05,Sponsor Response,2025-01-04,"Pending feedback from Jason."
+WEB-005,Sandbox testing for visuals,NovaPrime,Critical,Completed,3 hours,2025-01-03,Rae's visuals,2025-01-03,"Testing successful."
+VIS-003,Finalize GitHub branding assets,Rae,Medium,Completed,4 hours,2025-01-04,None,2025-01-04,"Assets approved for repository."
