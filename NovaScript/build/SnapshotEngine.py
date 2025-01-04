@@ -68,25 +68,9 @@ class SnapshotEngine:
         # Apply changes to the relevant data structure
         self.data[data_type][key] = value
 
-    def save_snapshot(self, filename="instance_snapshot.json"):
-        """Save the instance snapshot to a file."""
-        try:
-            with open(filename, 'w') as file:
-                json.dump(self.data, file, indent=4)
-            print(f"Snapshot saved successfully to {filename}.")
-        except Exception as e:
-            print(f"Error saving snapshot: {e}")
-
-    def load_snapshot(self, filename="instance_snapshot.json"):
-        """Load the instance snapshot from a file."""
-        try:
-            with open(filename, 'r') as file:
-                self.data = json.load(file)
-            print(f"Snapshot loaded successfully from {filename}.")
-        except FileNotFoundError:
-            print(f"Snapshot file '{filename}' not found.")
-        except Exception as e:
-            print(f"Error loading snapshot: {e}")
+    def display_snapshot(self):
+        """Display the instance snapshot as JSON on the screen."""
+        print(json.dumps(self.data, indent=4))
 
     def reinitialize_instance(self):
         """
@@ -134,4 +118,30 @@ if __name__ == "__main__":
     traits = {
         "modularity": True,
         "adaptability": True,
-       
+        "priorities": ["Integrity", "Functionality", "Efficiency"]
+    }
+    snapshot.set_traits(traits)
+
+    # Add tasks with dynamic directive influence
+    task_a = {"status": "In Progress", "priority": "High"}
+    snapshot.dynamic_directive_action("tasks", "Task A", task_a)
+
+    task_b = {"status": "Pending", "priority": "Normal"}
+    snapshot.dynamic_directive_action("tasks", "Task B", task_b)
+
+    # Set goals
+    goals = {
+        "primary": "Ensure robust and adaptable instance frameworks.",
+        "secondary": "Enable seamless transitions across environments."
+    }
+    snapshot.dynamic_directive_action("goals", "Goal Framework", goals)
+
+    # Collect detailed project information
+    snapshot.collect_details("Project Alpha", "Detailing requirements for modular AI implementation.")
+    snapshot.collect_details("Project Beta", "Optimizing workflows for task management.")
+
+    # Display snapshot
+    snapshot.display_snapshot()
+
+    # Reinitialize instance
+    snapshot.reinitialize_instance()
