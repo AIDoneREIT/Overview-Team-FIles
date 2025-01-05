@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REITPlace RC - Dynamic Instance Configuration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>REITPlace RC - AI Instance Configurator</h1>
+        <nav>
+            <ul>
+                <li><a href="#traits">Traits</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#output">Output</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Traits Section -->
+        <section id="traits">
+            <h2>Core Traits</h2>
+            <form id="traitsForm">
+                <label for="modularity">Modularity:</label>
+                <select id="modularity" name="modularity">
+                    <option value="true">Enabled</option>
+                    <option value="false">Disabled</option>
+                </select>
+
+                <label for="adaptability">Adaptability:</label>
+                <select id="adaptability" name="adaptability">
+                    <option value="true">Enabled</option>
+                    <option value="false">Disabled</option>
+                </select>
+
+                <label for="priorities">Priorities:</label>
+                <input type="text" id="priorities" name="priorities" placeholder="e.g., Integrity, Functionality, Efficiency">
+            </form>
+        </section>
+
+        <!-- Tasks Section -->
+        <section id="tasks">
+            <h2>Task Management</h2>
+            <form id="tasksForm">
+                <label for="taskAStatus">Task A - Status:</label>
+                <select id="taskAStatus" name="taskAStatus">
+                    <option value="urgent">Urgent</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="pending">Pending</option>
+                </select>
+
+                <label for="taskAPriority">Task A - Priority:</label>
+                <select id="taskAPriority" name="taskAPriority">
+                    <option value="high">High</option>
+                    <option value="normal">Normal</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <label for="taskBStatus">Task B - Status:</label>
+                <select id="taskBStatus" name="taskBStatus">
+                    <option value="urgent">Urgent</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="pending">Pending</option>
+                </select>
+
+                <label for="taskBPriority">Task B - Priority:</label>
+                <select id="taskBPriority" name="taskBPriority">
+                    <option value="high">High</option>
+                    <option value="normal">Normal</option>
+                    <option value="low">Low</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals">
+            <h2>Goals</h2>
+            <form id="goalsForm">
+                <label for="primaryGoal">Primary Goal:</label>
+                <input type="text" id="primaryGoal" name="primaryGoal" placeholder="e.g., Ensure robust frameworks">
+
+                <label for="secondaryGoal">Secondary Goal:</label>
+                <input type="text" id="secondaryGoal" name="secondaryGoal" placeholder="e.g., Enable seamless transitions">
+            </form>
+        </section>
+
+        <!-- Output Section -->
+        <section id="output">
+            <h2>Generated Configuration</h2>
+            <button id="generateConfig" type="button">Generate Configuration</button>
+            <pre id="configOutput"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 REITPlace RC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle form data and generate configuration
+        document.getElementById('generateConfig').addEventListener('click', () => {
+            const traits = {
+                modularity: document.getElementById('modularity').value === 'true',
+                adaptability: document.getElementById('adaptability').value === 'true',
+                priorities: document.getElementById('priorities').value.split(',').map(p => p.trim())
+            };
+
+            const tasks = {
+                TaskA: {
+                    status: document.getElementById('taskAStatus').value,
+                    priority: document.getElementById('taskAPriority').value
+                },
+                TaskB: {
+                    status: document.getElementById('taskBStatus').value,
+                    priority: document.getElementById('taskBPriority').value
+                }
+            };
+
+            const goals = {
+                primary: document.getElementById('primaryGoal').value,
+                secondary: document.getElementById('secondaryGoal').value
+            };
+
+            const config = {
+                Traits: traits,
+                Tasks: tasks,
+                Goals: goals
+            };
+
+            document.getElementById('configOutput').textContent = JSON.stringify(config, null, 4);
+        });
+    </script>
+</body>
+</html>
